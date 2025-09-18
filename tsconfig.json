@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es2020",
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["**/*.ts", "**/*.tsx", "build/types/**/*.ts"],
+  "exclude": ["node_modules", "build/**"]
+}
